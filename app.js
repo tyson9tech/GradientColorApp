@@ -1,5 +1,5 @@
 const idBtn = document.getElementById('changerCouleur');
-const text = document.getElementById('text');
+const text = document.getElementById('texte');
 const body = document.querySelector('body');
 
 idBtn.addEventListener('click', ()=>{
