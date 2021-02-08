@@ -1,9 +1,14 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: aqua;
+}
+
+h1{
+    text-shadow: -.1rem .1rem .4rem;
 }
