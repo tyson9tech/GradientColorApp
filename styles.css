@@ -6,12 +6,12 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    background-color: black;
+    background : linear-gradient(to right, #4168dd, #7c783e);
     color: aqua;
 }
 
 #texte{
-    width: 100%;
+    width: 50%;
     text-align: center;
     text-shadow: .1rem .1rem 10rem;
     background-color: black;
