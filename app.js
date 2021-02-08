@@ -1,11 +1,15 @@
 const idBtn = document.getElementById('changerCouleur');
+const text = document.getElementById('text');
 const body = document.querySelector('body');
 
 idBtn.addEventListener('click', ()=>{
     let sides = ['to left', 'to right', 'to bottom', 'to top'];
+
     let newSide = sides[numRand(0, sides.length)];
-    body.style.color = newCouleur();
-    body.style.background = `linear-gradient(${newSide}, ${newCouleur()}, ${newCouleur()})`;
+
+    let newColor = `linear-gradient(${newSide}, ${newCouleur()}, ${newCouleur()})`;
+    body.style.background = newColor;
+    text.innerHTML = `background-color : ${newColor};`;
 });
 
 function newCouleur(){
