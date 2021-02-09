@@ -14,27 +14,36 @@ html{
 body{
     width: 100vw;
     height: 100vh;
+    padding: 2rem;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background : linear-gradient(to right, #4168dd, #7c783e);
+    background-color: #000000;
     color: rgb(2, 16, 16);
     box-sizing: inherit;
 }
 
 #page {
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: .1rem 2rem;
     margin: 3rem auto;
     border-radius: .5rem;
     font-size: 1.2rem;
+    text-align: center;
+}
+#page h1{
+    color: #00ff00;
+    margin-bottom: 1.5rem;
+    background-color: #00000099;
+    border-radius: .5rem;
+    text-align: inherit;
 }
 
-#texte{
+#text {
     width: 70%;
     margin: .5rem auto;
     text-shadow: .1rem .1rem 10rem;
@@ -51,10 +60,13 @@ body{
     border: none;
     background-color: #000000ee;
 }
+#text::selection{
+    background-color: transparent;
+}
 
 #copie{
     outline: none;
-    margin: 1rem auto;
+    margin: 3rem auto;
     color: #20f200;
     background-color: rgb(100, 58, 43);
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
@@ -74,9 +86,7 @@ body{
     color: #ffffff;
 }
 
-#changerCouleur{
-    background-color: #643a2b;
-    color: #20f200;
+#prev, #next{
     outline: none;
     border: none;
     padding: .1rem 1.5rem;
@@ -87,8 +97,18 @@ body{
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: #00000099;
-    padding: .3rem .5rem;
+    width: 5rem;
+    padding: .1rem .5rem;
     border-radius: .5rem;
     font-weight: bold;
+}
+
+.inactive{
+    color: gray;
+    background-color: #9e9a9a99;
+}
+
+.active{
+    color: #20f200;
+    background-color: #000000e9;
 }
