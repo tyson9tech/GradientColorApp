@@ -9,7 +9,7 @@ idBtn.addEventListener('click', ()=>{
 
     let newColor = `linear-gradient(${newSide}, ${newCouleur()}, ${newCouleur()})`;
     body.style.background = newColor;
-    text.innerHTML = `background-color : ${newColor};`;
+    text.innerHTML = `background : ${newColor};`;
 });
 
 function newCouleur(){

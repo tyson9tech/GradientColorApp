@@ -6,26 +6,61 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    background-color: black;
-    color: aqua;
+    background : linear-gradient(to right, #4168dd, #7c783e);
+    color: rgb(2, 16, 16);
 }
 
 #texte{
-    width: 50%;
+    width: 30%;
+
+<<<<<<< HEAD
     margin: 0% auto;
-    text-align: center;
+=======
+>>>>>>> dcf0fd4af1fad9bda02312bca3b90cb466d47353
+  
     text-shadow: .1rem .1rem 10rem;
-    background-color: black;
+    background-color:grey;
+    padding: .1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;   
+    box-shadow: 1px 1px  2px rgb(66, 112, 143);
+    border:4px outset rgb(56,87,89);
+    
+}
+#page{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(43, 40, 40);
     padding: .1rem 2rem;
     border-radius: .5rem;
     font-size: 1.2rem;
+    box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
+    border:5px inset rgb(82, 69, 10);
+    
+
+
+}
+#copie{
+    margin:3rem;
+    color: rgb(89, 128, 128);
+    background-color: rgb(100, 58, 43);
+    box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
+    border:5px outset rgb(82, 69, 10);
+   
+
 }
 
 #changerCouleur{
+    background-color: rgb(100, 58, 43);
+    color: rgb(89, 128, 128);
     outline: none;
     border: none;
     padding: .1rem 1.5rem;
+    margin-top:0.4rem;
     font-weight: bold;
-    border-radius: 2rem;
+    box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
+    border:4px inset rgb(112, 94, 12);
+    
     cursor: pointer;
 }
