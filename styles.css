@@ -1,66 +1,73 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, ::after{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     background : linear-gradient(to right, #4168dd, #7c783e);
     color: rgb(2, 16, 16);
+    box-sizing: inherit;
 }
 
-#texte{
-    width: 30%;
-
-<<<<<<< HEAD
-    margin: 0% auto;
-=======
->>>>>>> dcf0fd4af1fad9bda02312bca3b90cb466d47353
-  
-    text-shadow: .1rem .1rem 10rem;
-    background-color:grey;
+#page {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000085;
     padding: .1rem 2rem;
-    border-radius: .5rem;
-    font-size: 1.2rem;   
-    box-shadow: 1px 1px  2px rgb(66, 112, 143);
-    border:4px outset rgb(56,87,89);
-    
-}
-#page{
-    width: 50%;
-    display:flex;
-    justify-content: center;
-    background-color: rgb(43, 40, 40);
-    padding: .1rem 2rem;
+    margin: 3rem;
     border-radius: .5rem;
     font-size: 1.2rem;
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
-    border:5px inset rgb(82, 69, 10);
-    
-
-
+    border: 5px inset rgb(82, 69, 10);
 }
+
+#texte{
+    margin: .5rem auto;
+    text-shadow: .1rem .1rem 10rem;
+    font-weight: bold;
+    background-color: grey;
+    color: #eeff00;
+    padding: .1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px  2px rgb(66, 112, 143);
+    border:4px outset rgb(56,87,89);
+    text-align: center;
+}
+
 #copie{
-    margin:3rem;
-    color: rgb(89, 128, 128);
+    margin: 1.5rem auto;
+    color: #00f2f2;
     background-color: rgb(100, 58, 43);
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
     border:5px outset rgb(82, 69, 10);
-   
-
+    cursor: pointer;
 }
 
 #changerCouleur{
     background-color: rgb(100, 58, 43);
-    color: rgb(89, 128, 128);
+    color: rgb(0, 255, 255);
     outline: none;
     border: none;
     padding: .1rem 1.5rem;
-    margin-top:0.4rem;
+    margin: 0.4rem auto;
     font-weight: bold;
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
     border:4px inset rgb(112, 94, 12);
-    
     cursor: pointer;
 }
