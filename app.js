@@ -14,11 +14,17 @@ idBtn.addEventListener('click', ()=>{
 
     let newColor = `linear-gradient(${newSide}, ${newCouleur()}, ${newCouleur()})`;
     body.style.background = newColor;
-    copyText.value = `background : ${newColor};`;
     copyText.disabled = false;
+    copyText.value = `background : ${newColor};`;
+    copyText.disabled = true;
 });
 
 copie.addEventListener('click', ()=>{
+
+    copyText.disabled = false;
+
+    let message = document.getElementById('message');
+
     if(copyText.value !== ""){
         /* Select the text field */
         copyText.select();
@@ -28,8 +34,14 @@ copie.addEventListener('click', ()=>{
         document.execCommand("copy");
 
         /* Alert the copied text */
-        console.log("Copied the text: " + copyText.value);
+        message.innerText = "Couleur Copiee";
+
+        setTimeout(()=>{
+            message.innerText = "";
+        }, 1000);
     }
+
+    copyText.disabled = true;
 });
 
 //FUNCTIONS
