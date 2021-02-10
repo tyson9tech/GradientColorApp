@@ -16,53 +16,42 @@ const copyText = _('#text');
 const numColor = _('#numColor');
 
 const gradientColors = new Array();
+let numberOfColor;
 
-let i = gradientColors.length;
+let i = 0;
 
 // EVENTS
 next.addEventListener('click', ()=>{
+    numberOfColor = gradientColors.length;
 
-    if ((i === 0) && (gradientColors.length > i)) {
+    if (i < numberOfColor) {
         i++;
     }
 
-    if (i === gradientColors.length) {
+    if (i === numberOfColor) {
         gradientColors.push(newProperty());
     }
 
-    if (gradientColors.length > 0) {
-        prev.disabled = false;
-        prev.classList.add('active');
+    if (numberOfColor > 0) {
         prev.classList.remove('inactive');
+        prev.classList.add('active');
+        prev.disabled = false;
     }
-
+    numColor.innerHTML = `<h1>Color: ${i+1}</h1>`;
     body.style.background = gradientColors[i];
-    copyText.disabled = false;
-    copyText.value = `background : ${gradientColors[i]};`;
-    numColor.innerHTML = `<h1>Color : ${i}</h1>`;
-    i++;
-
-    copyText.disabled = true;
+    copyText.value = gradientColors[i];
 });
 
 prev.addEventListener('click', ()=>{
-    
-    if (i === gradientColors.length) {
-        i--;
-    }
     i--;
-    body.style.background = gradientColors[i];
-    copyText.disabled = false;
-    copyText.value = `background : ${gradientColors[i]};`;
-    numColor.innerHTML = `<h1>Color : ${i}</h1>`;
-    
     if (i <= 0) {
-        prev.disabled = true;
         prev.classList.remove('active');
         prev.classList.add('inactive');
+        prev.disabled = true;
     }
-
-    copyText.disabled = true;
+    numColor.innerHTML = `<h1>Color: ${i+1}</h1>`;
+    body.style.background = gradientColors[i];
+    copyText.value = gradientColors[i];
 });
 
 
