@@ -43,7 +43,7 @@ body{
     color: #00ff00;
     margin-bottom: 1.5rem;
     padding: .2rem .5rem;
-    background-color: #00000099;
+    background-color: #000000;
     border-radius: .5rem;
     text-align: inherit;
     cursor: pointer;
@@ -68,7 +68,7 @@ body{
     outline: none;
     border: none;
     word-wrap: break-word;
-    background-color: #000000ee;
+    background-color: #000000;
 }
 #text::selection{
     background-color: transparent;
@@ -84,7 +84,7 @@ body{
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: #00000099;
+    background-color: #000000;
     padding: .1rem .5rem;
     border-radius: .5rem;
     font-weight: bold;
@@ -130,5 +130,5 @@ body{
 
 .active{
     color: #20f200;
-    background-color: #000000e9;
+    background-color: #000000;
 }
