@@ -75,8 +75,12 @@ body{
 }
 
 #copie{
+    position: absolute;
     outline: none;
-    margin: 7rem auto 3rem;
+    left: 50%;
+    right: 50%;
+    bottom: 3rem;
+    transform: translate(-50%, 50%);
     color: #20f200;
     background-color: rgb(100, 58, 43);
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
@@ -91,10 +95,13 @@ body{
 }
 
 #message{
+    margin: 15rem auto;
+    padding: .2rem .5rem;
     text-align: center;
     margin-bottom: 1.5rem;
     font-weight: bold;
     color: #ffffff;
+    background-color: #000000;
 }
 
 #prev, #next{
@@ -102,7 +109,7 @@ body{
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 7rem;
+    bottom: 2rem;
     margin: 0.4rem auto;
     font-weight: bold;
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
@@ -117,10 +124,10 @@ body{
 }
 
 #prev{
-    left: 2rem;
+    left: 1.5rem;
 }
 #next{
-    right: 2rem;
+    right: 1.5rem;
 }
 
 .inactive{
