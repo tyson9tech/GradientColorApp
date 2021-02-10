@@ -12,6 +12,7 @@ html{
 }
 
 body{
+    position: relative;
     width: 100vw;
     height: 100vh;
     padding: 2rem;
@@ -36,15 +37,23 @@ body{
     text-align: center;
 }
 #page h1{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
     color: #00ff00;
     margin-bottom: 1.5rem;
+    padding: .2rem .5rem;
     background-color: #00000099;
     border-radius: .5rem;
     text-align: inherit;
+    cursor: pointer;
 }
 
 #text {
-    width: 70%;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    width: 50%;
     margin: .5rem auto;
     text-shadow: .1rem .1rem 10rem;
     font-weight: bold;
@@ -58,6 +67,7 @@ body{
     text-align: center;
     outline: none;
     border: none;
+    word-wrap: break-word;
     background-color: #000000ee;
 }
 #text::selection{
@@ -66,11 +76,11 @@ body{
 
 #copie{
     outline: none;
-    margin: 3rem auto;
+    margin: 7rem auto 3rem;
     color: #20f200;
     background-color: rgb(100, 58, 43);
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
-    border:5px outset rgb(82, 69, 10);
+    border: 5px outset rgb(82, 69, 10);
     cursor: pointer;
     outline: none;
     border: none;
@@ -83,13 +93,16 @@ body{
 #message{
     text-align: center;
     margin-bottom: 1.5rem;
+    font-weight: bold;
     color: #ffffff;
 }
 
 #prev, #next{
-    outline: none;
-    border: none;
-    padding: .1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 7rem;
     margin: 0.4rem auto;
     font-weight: bold;
     box-shadow: 2px 1px 2px 2px rgb(66, 112, 143);
@@ -101,6 +114,13 @@ body{
     padding: .1rem .5rem;
     border-radius: .5rem;
     font-weight: bold;
+}
+
+#prev{
+    left: 2rem;
+}
+#next{
+    right: 2rem;
 }
 
 .inactive{

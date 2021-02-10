@@ -13,6 +13,7 @@ const next = _('#next');
 const prev = _('#prev');
 const body = _('body');
 const copyText = _('#text');
+const copie = _('#copie');
 const numColor = _('#numColor');
 
 const gradientColors = new Array();
@@ -80,6 +81,23 @@ copie.addEventListener('click', ()=>{
     copyText.disabled = true;
 });
 
+
+body.addEventListener('click', ()=>{
+    next.style.display = "flex";
+    prev.style.display = "flex";
+    copyText.style.display = "flex";
+    copie.style.display = "flex";
+    numColor.style.display = "flex";
+});
+
+numColor.addEventListener('click', (e)=>{
+    e.stopImmediatePropagation();
+    next.style.display = "none";
+    prev.style.display = "none";
+    copyText.style.display = "none";
+    copie.style.display = "none";
+    numColor.style.display = "none";
+});
 
 //FUNCTIONS
 
